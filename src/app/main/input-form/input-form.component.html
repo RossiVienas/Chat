@@ -1,0 +1,15 @@
+<input
+  [(ngModel)]="link"
+  (keydown.enter)="add()"
+  type="text"
+  placeholder="link..">
+
+<input
+  [(ngModel)]="content"
+  (keydown.enter)="add()"
+  type="text"
+  placeholder="message..">
+
+<br>
+
+<button (click)="add()">Send</button>

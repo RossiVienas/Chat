@@ -1,0 +1,14 @@
+<div class="messages">
+  <app-messages
+    *ngFor="let i of messages"
+    [messageContent]="i"
+    (onDelete)="deleteMessage($event)"
+  ></app-messages>
+</div>
+
+<div class="input">
+  <app-input-form
+    (onAdd)="addMessage($event)"
+  ></app-input-form>
+</div>
+

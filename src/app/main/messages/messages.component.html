@@ -1,0 +1,15 @@
+<div class="root">
+  <p
+    *ngIf="messageContent.link.length !== 1"
+    class="link content">
+    <a href="{{ messageContent.link.startsWith('http') ? messageContent.link : 'http://' + messageContent.link }}">
+      {{ messageContent.link.length < 20 ? messageContent.link : messageContent.link.substr(0, 20) + '...' }}
+    </a>
+  </p>
+
+  <p class="content">{{ messageContent.content }}</p>
+
+  <p class="date">{{ messageContent.data | date:'short' }}</p>
+
+  <p class="delete" (click)="delete()">Удалить</p>
+</div>

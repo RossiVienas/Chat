@@ -1,0 +1,20 @@
+.date {
+  text-align: right;
+  margin-right: 5%;
+}
+
+.delete {
+  text-align: right;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.delete:hover {
+  opacity: .3;
+}
+.delete:active {
+  opacity: .7;
+}
+
+.content {
+  margin-left: 5%;
+}

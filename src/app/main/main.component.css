@@ -1,0 +1,9 @@
+.messages {
+  width: 80%;
+  height: 70vh;
+  border: .5px solid black;
+  border-radius: 1%;
+  margin-top: 2%;
+  margin-left: 10%;
+  overflow-y: auto;
+}
